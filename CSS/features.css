@@ -1,0 +1,93 @@
+/* Section After Hero Styling */
+.features-section {
+    padding: 40px 80px;
+    background-color: white;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 50%;
+}
+
+.features-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-box {
+    width: 48.8%; 
+    text-align: left;
+}
+
+.feature-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.feature-box .learn-more {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.feature-box .learn-more:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features-section {
+        padding: 20px;
+    }
+
+    .features-section h2 {
+        font-size: 2rem;
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    .features-row {
+        justify-content: center; 
+    }
+
+    .feature-box {
+        width: 100%; 
+    }
+
+    .feature-box h3 {
+        font-size: 1.5rem; 
+    }
+
+    .feature-box p {
+        font-size: 1rem;
+    }
+
+    .feature-box .learn-more {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .features-section {
+        padding: 15px;
+    }
+
+    .features-section h2 {
+        font-size: 1.8rem;
+    }
+}

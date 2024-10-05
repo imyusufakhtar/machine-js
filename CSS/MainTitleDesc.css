@@ -1,0 +1,153 @@
+/* Main Title Section Styling */
+.main-title-section {
+    padding: 50px 80px;
+    text-align: center; 
+    background-color: #ffffff; 
+}
+
+.main-title-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-title-section p {
+    font-size: 1.2rem; 
+    color: #555;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/* Content Image Section */
+.content-image-section {
+    padding: 50px 80px;
+    background-color: #ffffff;
+    position: relative; 
+}
+
+.content-image-section::after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.content-image-section .content {
+    float: left; 
+    width: 49%; 
+    padding-right: 20px;
+}
+
+.content-image-section .content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-image-section .content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.content-image-section .image {
+    position: absolute; 
+    top: 40px; 
+    right: 80px; 
+    width: 45%; 
+}
+
+.content-image-section .image img {
+    width: 100%; 
+    height: auto; 
+    /* border-radius: 10px; */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .main-title-section {
+        padding: 40px 60px;
+    }
+
+    .main-title-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-title-section p {
+        font-size: 1.1rem;
+    }
+
+    .content-image-section {
+        padding: 40px 60px;
+    }
+
+    .content-image-section .content {
+        width: 100%; 
+        padding-right: 0; 
+        float: none; /* Remove float on smaller screens */
+    }
+
+    .content-image-section .image {
+        position: relative; 
+        width: 100%; 
+        top: 0; 
+        right: 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title-section {
+        padding: 30px 40px;
+    }
+
+    .main-title-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-title-section p {
+        font-size: 1rem;
+    }
+
+    .content-image-section {
+        padding: 30px 40px;
+    }
+
+    .content-image-section .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .content-image-section .content p {
+        font-size: 1rem;
+    }
+
+    .content-image-section .image {
+        width: 100%; 
+        position: relative; 
+        top: 0; 
+        right: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title-section {
+        padding: 20px 20px;
+    }
+
+    .main-title-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-title-section p {
+        font-size: 0.9rem;
+    }
+
+    .content-image-section {
+        padding: 20px 20px;
+    }
+
+    .content-image-section .content h2 {
+        font-size: 1.1rem;
+    }
+
+    .content-image-section .content p {
+        font-size: 0.9rem;
+    }
+}
